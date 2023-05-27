@@ -51,7 +51,7 @@ def luhn(s):
 # validates the credit card numer passed as a string
 
 def isvalid(ccn):
-    # reove any/all non-interger values
+    # reove any/all non-integer values
     ccn = re.sub(r'[^0-9]', '', ccn)
     # if we get a match to eny of the known expressions, validate the check digit
     for exp in MASTERCARD, VISA, DISCOVER, JCB, AMEX, DINERS, MAESTRO:
